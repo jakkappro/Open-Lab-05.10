@@ -6,7 +6,10 @@ namespace Open_Lab_05._10
     {
         public int MysteryFunc(int num)
         {
-            throw new NotImplementedException();
+            string snum = num.ToString();
+            int ret = 1;
+            for (int i = 0; i < snum.Length; i++) ret *= int.Parse(snum.ToCharArray()[i].ToString());
+            return ret;
         }
     }
 }
